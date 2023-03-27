@@ -15,13 +15,11 @@ class StudentController extends Controller
         if($students->count() > 0){
 
             return response()->json([
-                'status' => 200,
                 'students' => $students
             ], 200);
         }else {
 
             return response()->json([
-                'status' => 404,
                 'message' => 'No Records Found'
             ], 404);
         }
@@ -42,7 +40,6 @@ class StudentController extends Controller
         if($validator->fails()){
             
             return response()->json([
-                'status' => 422,
                 'errors' => $validator->messages()
             ], 422);
         }else{
@@ -60,13 +57,11 @@ class StudentController extends Controller
             if($student){
 
                 return response()->json([
-                    'status' => 200,
                     'message' => "Student Created Successfully"
                 ],200);
             }else{
 
                 return response()->json([
-                    'status' => 500,
                     'message' => "Somethong Went Wrong"
                 ],500);
             }
@@ -79,13 +74,11 @@ class StudentController extends Controller
         if($student){
 
             return response()->json([
-                'status' => 200,
                 'student' => $student
             ],200);
         }else{
 
             return response()->json([
-                'status' => 404,
                 'message' => "No Such Student Found!"
             ],404);
         }
@@ -97,13 +90,11 @@ class StudentController extends Controller
         if($student){
 
             return response()->json([
-                'status' => 200,
                 'student' => $student
             ],200);
         }else{
 
             return response()->json([
-                'status' => 404,
                 'message' => "No Such Student Found!"
             ],404);
         }
@@ -124,7 +115,6 @@ class StudentController extends Controller
         if($validator->fails()){
             
             return response()->json([
-                'status' => 422,
                 'errors' => $validator->messages()
             ], 422);
         }else{
@@ -143,13 +133,11 @@ class StudentController extends Controller
                 ]);
 
                 return response()->json([
-                    'status' => 200,
                     'message' => "Student Updated Successfully"
                 ],200);
             }else{
 
                 return response()->json([
-                    'status' => 404,
                     'message' => "No Such Student Found!"
                 ],404);
             }
@@ -164,13 +152,11 @@ class StudentController extends Controller
             $student->delete();
 
             return response()->json([
-                'status' => 200,
                 'message' => "Student Deleted Successfully"
             ],200);
         }else{
 
             return response()->json([
-                'status' => 404,
                 'message' => "No Such Student Found!"
             ],404);
         }
