@@ -14,5 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+
+Route::get('/login', function () {
+    return view('login');
+});
+Route::get('/admin/dashboard', function () {
+    return view('admin.dashboard');
+});
+Route::get('/talent', function () {
+    return view('talent');
+});
+Route::get('/skill', function () {
+    return view('skill');
+});
+
+
+
