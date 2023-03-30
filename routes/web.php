@@ -31,5 +31,8 @@ Route::get('/skill', function () {
     return view('skill');
 });
 
+Route::get('/peserta', function () {
+    return view('peserta');
+});
 
 
