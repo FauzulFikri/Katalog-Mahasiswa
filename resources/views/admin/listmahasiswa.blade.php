@@ -13,7 +13,7 @@
   <body>
     <div class="" style="background-color: #472183;">
 <div class="container">
-    <h2 class="text-white p-3">Talent Mhasiswa UNP</h2>
+    <h2 class="text-white p-3">Talent Mahasiswa UNP</h2>
 </div> 
     </div>
 

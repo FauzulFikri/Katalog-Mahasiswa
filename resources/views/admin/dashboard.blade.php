@@ -39,7 +39,7 @@
 <br>
 
         <div class="container text-center">
-            <h1 style="font-family: Prata;">Selamat Dtang di Talent UNP</h1>
+            <h1 style="font-family: Prata;">Selamat Datang di Talent UNP</h1>
             <img src="{{ asset('img/hu.JPG') }}"  class="img-fluid rounded-circle" width="300px"
             height="300px" alt="">
         </div>

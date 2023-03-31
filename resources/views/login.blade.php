@@ -26,17 +26,18 @@
                 <h3 class="font-weight-bold text-dark" style="font-family: poppins;"  id="exampleModalLabel">Login</h3>
                 </p>
             </div>
-            <form>
+            <form method="POST" action="{{ route('admin_login_submit') }}">
+                @csrf
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email Address</label>
-                  <input type="email" class="form-control border border-dark" id="exampleInputEmail1" placeholder="email">
+                  <input type="email" class="form-control border border-dark" id="exampleInputEmail1" placeholder="email" value="{{ old('email') }}">
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Password</label>
                   <input type="password" class="form-control border border-dark" id="exampleInputPassword1" placeholder="Password">
                 </div>
                 <div class="text-center">
-                    <button type="submit" class="btn btn-primary">Login</button>
+                    <a button type="submit" href="{{ route('admin_dashboard') }}" class="btn btn-primary">Login</a>
                 </div>
                 
                 <div class="text-center">

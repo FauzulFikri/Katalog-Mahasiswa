@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\AdminHomeController;
+use App\Http\Controllers\Admin\AdminLoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,5 +33,11 @@ Route::get('/skill', function () {
     return view('skill');
 });
 
+/* Admin */
+Route::get('/admin/dashboard', [AdminHomeController::class, 'index'])->name('admin_dashboard');
+
+/* Admin Login */
+Route::get('/login', [AdminLoginController::class, 'index'])->name('login');
+Route::post('/login/login-submit', [AdminLoginController::class, 'login_submit'])->name('admin_login_submit');
 
 

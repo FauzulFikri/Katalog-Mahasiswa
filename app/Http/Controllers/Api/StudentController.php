@@ -34,7 +34,8 @@ class StudentController extends Controller
             'alamat' => 'required|string|max:191',
             'tahun_masuk' => 'required|string|max:191',
             'no_telp' => 'required|digits:10',
-            'email' => 'required|email|max:191'
+            'email' => 'required|email|max:191',
+            'deskripsi' => 'required|string|max:191'
         ]);
 
         if($validator->fails()){
@@ -52,6 +53,7 @@ class StudentController extends Controller
                 'tahun_masuk' => $request->tahun_masuk,
                 'no_telp' => $request->no_telp,
                 'email' => $request->email,
+                'deskripsi' => $request->deskripsi
             ]);
 
             if($student){
@@ -109,7 +111,8 @@ class StudentController extends Controller
             'alamat' => 'required|string|max:191',
             'tahun_masuk' => 'required|string|max:191',
             'no_telp' => 'required|digits:10',
-            'email' => 'required|email|max:191'
+            'email' => 'required|email|max:191',
+            'deskripsi' => 'required|string|max:191'
         ]);
 
         if($validator->fails()){
@@ -130,6 +133,7 @@ class StudentController extends Controller
                     'tahun_masuk' => $request->tahun_masuk,
                     'no_telp' => $request->no_telp,
                     'email' => $request->email,
+                    'deskripsi' => $request->deskripsi,
                 ]);
 
                 return response()->json([

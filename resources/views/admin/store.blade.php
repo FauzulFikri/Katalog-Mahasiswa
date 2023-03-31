@@ -17,7 +17,7 @@
 
     <div class="py-3" style="background-color: #472183;">
         <div class="container">
-            <div class="h4 text-white"> Mahasiswa</div>
+            <div class="h4 text-white">Mahasiswa</div>
         </div>
     </div>
     .<div class="container">
