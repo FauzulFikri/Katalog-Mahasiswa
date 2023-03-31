@@ -12,7 +12,7 @@
             <link rel="stylesheet" href="style.css">
     </head>
     <body style="background-color: #F1F6F5;">
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #362999;">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #472183;">
             <div class="container text-white">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -43,87 +43,175 @@
 
 <br>
       <div class="container">
-      <div class="row row-cols-1 row-cols-md-4 g-3">
+      <div class="row row-cols-md-3 g-4 p-5">
         <div class="col">
           <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+            <div class="card-header text-center">
+                <img src="{{ asset('img/hu.JPG') }}" alt="" class="img-fluid rounded-circle" width="150px"
+                        height="150px">
+            </div>
             <div class="card-body">
-              <h5 class="card-title text-center"> Komputer dan jaringan</h5>
-              <p class="card-text text-end">1000 peserta
-              </p>
+              <h5 class="card-title text-center"> Hudiya Mubarokah</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                dolores asperiores odio recusandae non? Fugit eum.....
               <a href="">see more</a>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-            <div class="card-body">
-              <h5 class="card-title text-center"> Komputer dan jaringan</h5>
-              <p class="card-text text-end">1000 peserta
-              </p>
-              <a href="">see more</a>
+            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+              <div class="card-header text-center">
+                  <img src="{{ asset('img/hu.JPG') }}" alt="" class="img-fluid rounded-circle" width="150px"
+                          height="150px">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center"> Hudiya Mubarokah</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                  dolores asperiores odio recusandae non? Fugit eum.....
+                <a href="">see more</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-            <div class="card-body">
-              <h5 class="card-title text-center"> Komputer dan jaringan</h5>
-              <p class="card-text text-end">1000 peserta
-              </p>
-              <a href="">see more</a>
+          <div class="col">
+            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+              <div class="card-header text-center">
+                  <img src="{{ asset('img/hu.JPG') }}" alt="" class="img-fluid rounded-circle" width="150px"
+                          height="150px">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center"> Hudiya Mubarokah</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                  dolores asperiores odio recusandae non? Fugit eum.....
+                <a href="">see more</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-            <div class="card-body">
-              <h5 class="card-title text-center"> Komputer dan jaringan</h5>
-              <p class="card-text text-end">1000 peserta
-              </p>
-              <a href="">see more</a>
+          <div class="col">
+            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+              <div class="card-header text-center">
+                  <img src="{{ asset('img/hu.JPG') }}" alt="" class="img-fluid rounded-circle" width="150px"
+                          height="150px">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center"> Hudiya Mubarokah</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                  dolores asperiores odio recusandae non? Fugit eum.....
+                <a href="">see more</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-            <div class="card-body">
-              <h5 class="card-title text-center"> Komputer dan jaringan</h5>
-              <p class="card-text text-end">1000 peserta
-              </p>
-              <a href="">see more</a>
+          <div class="col">
+            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+              <div class="card-header text-center">
+                  <img src="{{ asset('img/hu.JPG') }}" alt="" class="img-fluid rounded-circle" width="150px"
+                          height="150px">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center"> Hudiya Mubarokah</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                  dolores asperiores odio recusandae non? Fugit eum.....
+                <a href="">see more</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-            <div class="card-body">
-              <h5 class="card-title text-center"> Komputer dan jaringan</h5>
-              <p class="card-text text-end">1000 peserta
-              </p>
-              <a href="">see more</a>
+          <div class="col">
+            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+              <div class="card-header text-center">
+                  <img src="{{ asset('img/hu.JPG') }}" alt="" class="img-fluid rounded-circle" width="150px"
+                          height="150px">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center"> Hudiya Mubarokah</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                  dolores asperiores odio recusandae non? Fugit eum.....
+                <a href="">see more</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-            <div class="card-body">
-              <h5 class="card-title text-center"> Komputer dan jaringan</h5>
-              <p class="card-text text-end">1000 peserta
-              </p>
-              <a href="">see more</a>
+          <div class="col">
+            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+              <div class="card-header text-center">
+                  <img src="{{ asset('img/hu.JPG') }}" alt="" class="img-fluid rounded-circle" width="150px"
+                          height="150px">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center"> Hudiya Mubarokah</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                  dolores asperiores odio recusandae non? Fugit eum.....
+                <a href="">see more</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-            <div class="card-body">
-              <h5 class="card-title text-center"> Komputer dan jaringan</h5>
-              <p class="card-text text-end">1000 peserta
-              </p>
-              <a href="">see more</a>
+          <div class="col">
+            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+              <div class="card-header text-center">
+                  <img src="{{ asset('img/hu.JPG') }}" alt="" class="img-fluid rounded-circle" width="150px"
+                          height="150px">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center"> Hudiya Mubarokah</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                  dolores asperiores odio recusandae non? Fugit eum.....
+                <a href="">see more</a>
+              </div>
             </div>
           </div>
-        </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+              <div class="card-header text-center">
+                  <img src="{{ asset('img/hu.JPG') }}" alt="" class="img-fluid rounded-circle" width="150px"
+                          height="150px">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center"> Hudiya Mubarokah</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                  dolores asperiores odio recusandae non? Fugit eum.....
+                <a href="">see more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+              <div class="card-header text-center">
+                  <img src="{{ asset('img/hu.JPG') }}" alt="" class="img-fluid rounded-circle" width="150px"
+                          height="150px">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center"> Hudiya Mubarokah</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                  dolores asperiores odio recusandae non? Fugit eum.....
+                <a href="">see more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+              <div class="card-header text-center">
+                  <img src="{{ asset('img/hu.JPG') }}" alt="" class="img-fluid rounded-circle" width="150px"
+                          height="150px">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center"> Hudiya Mubarokah</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                  dolores asperiores odio recusandae non? Fugit eum.....
+                <a href="">see more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+              <div class="card-header text-center">
+                  <img src="{{ asset('img/hu.JPG') }}" alt="" class="img-fluid rounded-circle" width="150px"
+                          height="150px">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center"> Hudiya Mubarokah</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                  dolores asperiores odio recusandae non? Fugit eum.....
+                <a href="">see more</a>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
     <br><br>  

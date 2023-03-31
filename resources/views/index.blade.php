@@ -12,7 +12,7 @@
             <link rel="stylesheet" href="style.css">
     </head>
     <body style="background-color: #F1F6F5;">
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #362999;">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #472183;">
             <div class="container text-white">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -91,7 +91,7 @@
         
         <div class="container position-relative "> 
          
-          <div class="card text-start " style="background-color: #4E31AA; box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.504);">
+          <div class="card text-start " style="background-color: #7B6CF6; box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.504);">
             <div class="row">
               <div class="col-sm-6 col-md-6 p-5 text-white">
                   <h1 style="font-family: Prata;"> Work the Way <br> You Want </h1>

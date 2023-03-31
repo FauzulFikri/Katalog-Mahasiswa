@@ -19,18 +19,14 @@ Route::get('/', function () {
     return view('index');
 });
 
-
-Route::get('/login', function () {
-    return view('login');
-});
-Route::get('/admin/dashboard', function () {
-    return view('admin.dashboard');
-});
 Route::get('/talent', function () {
     return view('talent');
 });
 Route::get('/skill', function () {
     return view('skill');
+});
+Route::get('/peserta', function () {
+    return view('peserta');
 });
 
 /* Admin */
@@ -39,5 +35,6 @@ Route::get('/admin/dashboard', [AdminHomeController::class, 'index'])->name('adm
 /* Admin Login */
 Route::get('/login', [AdminLoginController::class, 'index'])->name('login');
 Route::post('/login/login-submit', [AdminLoginController::class, 'login_submit'])->name('admin_login_submit');
+
 
 
