@@ -21,4 +21,7 @@ class Student extends Model
         'email',
         'deskripsi'
     ];
+    function notes() {
+        return $this->hasMany(Student::class);
+    }
 }

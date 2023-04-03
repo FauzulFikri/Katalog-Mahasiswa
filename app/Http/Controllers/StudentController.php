@@ -1,56 +1,15 @@
 <?php
 
-namespace App\Http\Controllers\User;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 use App\Models\Student;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Auth;
-/**
- * Class SubscriptionController
- * @package App\Http\Controllers
- */
-class UserController extends Controller
+
+use Illuminate\Http\Request;
+
+class StudentController extends Controller
 {
-    public function login()
-    {
-        return view('login');
-    }
-
-    public function login_submit(Request $request)
-    {
-        /*$request->validate([
-            'email' => 'required|email',
-            'password' => 'required'
-        ]);
-
-        $credentials = [
-            'email' => $request->email,
-            'password' => $request->password
-        ];
-
-        if(Auth::guard('user')->attempt($credentials)) {
-            return redirect()->route('user_dashboard');
-        } else {
-            return redirect()->back()->with('error', 'Information is not correct!');
-        } */
-        echo 'Hallo';
-    }
-
-    public function index() {
-
-        $student = Student::where('id')->paginate(10);
-
-        return view('user.dashboard',['student' => $student]);
-    }
-
-    public function create() {
-        return view('user.form');
-    }
-
     public function store(Request $request) {
         $validator = Validator::make($request->all(),[
             'nama' => 'required',
@@ -133,11 +92,4 @@ class UserController extends Controller
             return redirect()->route('user.edit',$student->id)->withErrors($validator)->withInput();
         }
     }
-
-    // public function destroy(Student $student, Request $request) {
-    //     //$employee = Employee::findOrFail($id);                
-    //     // File::delete(public_path().'/uploads/user/'.$employee->image);
-    //     $student->delete();        
-    //     return redirect()->route('employees.index')->with('success','Employee deleted successfully.');
-    // }
 }

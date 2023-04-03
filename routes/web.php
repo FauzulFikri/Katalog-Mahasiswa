@@ -21,9 +21,9 @@ Route::get('/', function () {
 });
 
 
-Route::get('/admin/dashboard', function () {
-    return view('admin.dashboard');
-});
+// Route::get('/admin/dashboard', function () {
+//     return view('admin.dashboard');
+// });
 Route::get('/talent', function () {
     return view('talent');
 });
@@ -43,5 +43,15 @@ Route::post('/login/login-submit', [AdminLoginController::class, 'login_submit']
 
 /* User */
 Route::get('/login', [UserController::class, 'login'])->name('login');
-Route::get('/user/dashboard', [UserController::class, 'index'])->name('user_dashboard');
+Route::get('/user/dashboard', [UserController::class, 'index'])->name('user.dashboard');
+Route::get('/user/edit', [UserController::class, 'edit'])->name('user.edit');
+Route::put('/user',[UserController::class,'update'])->name('user.update');
+Route::post('/user',[UserController::class,'store'])->name('user.store');
+Route::get('/user/create',[UserController::class,'create'])->name('user.create');
+// Route::resource('user',UserController::class(), ['parameters' => ['user' => 'student']]);
+// Route::get('/user',[UserController::class,'index'])->name('user.dashboard');
+// Route::get('/employees/create',[EmployeeController::class,'create'])->name('employees.create');
+
+// Route::get('/user/{user}/edit',[EmployeeController::class,'edit'])->name('user.edit');
+// Route::put('/employees/{employee}',[EmployeeController::class,'update'])->name('employees.update');
 

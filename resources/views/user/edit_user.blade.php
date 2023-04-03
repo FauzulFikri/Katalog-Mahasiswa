@@ -17,19 +17,21 @@
 
     <div class="py-3" style="background-color: #472183;">
         <div class="container">
-            <div class="h4 text-white">Fomulir Mahasiswa</div>
+            <div class="h4 text-white">Mahasiswa </div>
         </div>
     </div>
-    <div class="container p-5">
+    .<div class="container">
+        <div class="d-flex justify-content-between py-3">
+            <div class="h4">Edit Mahasiswa</div>
+            <div>
+                <a href="" class="btn btn-primary">Back</a>
+            </div>
+        </div>
         <div class="card p-sm-5">
-            <form class="row g-3"  action="{{ route('user.store') }}" method="post" enctype="multipart/form-data">
-                @csrf
+            <form class="row g-3">
                 <div class="mb-3">
                     <label for="Nama" class="form-label">Nama Mahasiswa</label>
-                    <input type="text" name="nama" id="nama" placeholder="Enter Nama" class="form-control @error('nama') is-invalid @enderror" value="{{ old('nama') }}">
-                    @error('nama')
-                        <p class="invalid-feedback">{{ $message }}</p>    
-                    @enderror                        
+                    <input type="text" class="form-control" id="Nama">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Foto</label>
@@ -39,17 +41,12 @@
                     </div>
                 <div class="mb-3">
                     <label for="NIM" class="form-label">NIM</label>
-                    <input type="text" name="nim" id="nim" placeholder="Enter Nim" class="form-control @error('nim') is-invalid @enderror" value="{{ old('nim') }}">
-                    @error('email')
-                        <p class="invalid-feedback">{{ $message }}</p>    
-                    @enderror 
+                    <input type="text" class="form-control" id="NIM">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="text" name="email" id="email" placeholder="Enter Email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}">
-                    @error('nim')
-                        <p class="invalid-feedback">{{ $message }}</p>    
-                    @enderror 
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
                     <label for="alamat" class="form-label">Alamat</label>
@@ -82,14 +79,10 @@
                       </select>
                 </div>
                 <div class="mb-3">
-                    <label for="desk" class="form-label">Deskripsi</label>
-                    <textarea class="form-control" aria-label="With textarea"></textarea>
-                  </div>
-                <div class="mb-3">
                     <label for="noHp" class="form-label">Nomor Handphone</label>
                     <input type="email" class="form-control" id="noHp">
                 </div>
-                <button type="submit" class="btn btn-primary w-25 ">Submit</button>
+                <button type="submit" class="btn btn-outline-primary w-25 ">update</button>
             </form>
         </div>
     </div>
